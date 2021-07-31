@@ -5,17 +5,17 @@ body {
   line-height: 1.5;
   margin: 0 auto;
   max-width: 40em;
-}
-
-body > :not(header) {
   padding: 0 1em;
+
+  overflow-x: hidden; /* needed for header margin */
 }
 
 header {
   background: #333;
   display: grid;
-  margin: 0 calc(0px - (50vw - 50%)) 0;
   text-align: center;
+
+  margin: 0 calc(0px - (50vw - 50%)) 0;
 }
 
 h1,
@@ -25,7 +25,13 @@ h4,
 h5,
 h6 {
   margin: 1em 0 0.5em 0;
+  padding: 1em 0 0 0;
   line-height: 1.2;
+}
+
+h2 + h3 {
+  margin: .5em 0 0.5em 0;
+  padding: .5em 0 0 0;
 }
 
 a {
@@ -64,4 +70,14 @@ img {
   max-width: 100%;
 }
 
+pre,
+blockquote {
+  background: #444;
+  border-left: medium solid #99f;
+  padding: 2em 2em 2em 3em;
+  margin: 0;
+}
 
+blockquote {
+  font-style: italic;
+}
