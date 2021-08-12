@@ -35,16 +35,16 @@ h2 + h3 {
 }
 
 a {
-  color: #9f9;
+  color: #9e9;
 }
 
 a:hover {
-  color: #5f5;
+  color: #5e5;
 }
 
 a:active,
 a:visited {
-  color: #f99;
+  color: #e99;
 }
 
 h1 a,
@@ -73,7 +73,7 @@ img {
 pre,
 blockquote {
   background: #333;
-  border-left: medium solid #99f;
+  border-left: medium solid #99e;
   padding: 2em 2em 2em 3em;
   margin: 0;
 }
